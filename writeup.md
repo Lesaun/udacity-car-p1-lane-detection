@@ -61,6 +61,8 @@ I can only imaine the anarchy that would insue if an actual self-driving car was
 
 This same pipeline with a few tweaks could provide far better and maybe even acceptable performance.
 
-The largest room for improvement is probably better identifing which hough lines are actually apart of lane markers. You could do this by attempting to remove the noise by tweaking the parameters for Canny Edge Detection and the Hough Lines Transform, or by dropping lines with horizontal slope.
+The largest room for improvement is probably better identifying which hough lines are actually apart of lane markers. You could do this by attempting to remove the noise by tweaking the parameters for Canny Edge Detection and the Hough Lines Transform, or by dropping lines with horizontal slope.
+
+Another improvement could be to fit a 2nd degree line to the hough lines allowing for lane curves to be drawn.
 
 But I expect that this is just not the best route to take with for this task. A solution that I'd imagine more effective would be to gether a large dataset, and use machine learning to identify lane lines.

@@ -53,13 +53,15 @@ Here is an example result running the pipeline over each frame of a video.
 
 I really hope no one uses this in an actual self-driving car. It's really bad ;).
 
-It's very quick to find anything a lane marker even the shadow of a tree. This is primarily because I am detecting lane markers purely based off of the two largest group of hough lines with similar slopes. It also makes no attempt at mapping the curves in the lane markers. I can only imaine the anarchy that would insue if an actual self-driving car was on the road with this code.
+It's very quick to find anything a lane line even the shadow of a tree. It also makes no attempt at mapping the curves in the lane lines.
+
+I can only imaine the anarchy that would insue if an actual self-driving car was on the road with this code.
 
 ### Possible improvements
 
 This same pipeline with a few tweaks could provide far better and maybe even acceptable performance.
 
-The largest room for improvement is probably better indentifing which hough lines were actually apart of lane markers. You could do this by attempting to remove the noise by tweaking the parameters for Canny Edge Detection and the Hough Lines Transform, or by dropping lines with horizontal slope.
+The largest room for improvement is probably better identifying which hough lines are actually apart of lane markers. You could do this by attempting to remove the noise by tweaking the parameters for Canny Edge Detection and the Hough Lines Transform, or by dropping lines with horizontal slope.
 
 Another improvement could be to fit a 2nd degree line to the hough lines allowing for lane curves to be drawn.
 
