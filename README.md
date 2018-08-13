@@ -53,7 +53,7 @@ Here is an example result running the pipeline over each frame of a video.
 
 I really hope no one uses this in an actual self-driving car. It's really bad ;).
 
-It's very quick to find anything a lane line even the shadow of a tree. It also makes no attempt at mapping the curves in the lane lines.
+It's very quick to find almost anything a lane line even the shadow of a tree. It also makes no attempt at mapping the curves in the lane lines.
 
 I can only imaine the anarchy that would insue if an actual self-driving car was on the road with this code.
 
@@ -65,4 +65,4 @@ The largest room for improvement is probably better identifying which hough line
 
 Another improvement could be to fit a 2nd degree line to the hough lines allowing for lane curves to be drawn.
 
-But I expect that this is just not the best route to take with for this task. A solution that I'd imagine more effective would be to gether a large dataset, and use machine learning to identify lane lines.
+But I expect that this is just not the best route to take for this task. A solution that I'd imagine more effective would be to gether a large dataset, and use machine learning to identify lane lines.
